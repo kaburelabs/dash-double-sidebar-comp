@@ -66,12 +66,11 @@
     margin-left: 6.5rem;
   } */
 
-  /* move all contents of navbar other than header (containing toggle) further
-     off-screen */
-  /* #left-sidebar.collapsed-left > *:not(:first-child) {
+  /* move all contents of navbar other than header (containing toggle) further off-screen */
+  #left-sidebar.collapsed-left > *:not(:first-child) {
     margin-left: -6rem;
     margin-right: 6rem;
-  } */
+  }
 
   /* reveal the blurb on a large screen */
   #left-blurb {
@@ -86,11 +85,5 @@
   #left-collapse {
     display: block;
   }
-
-  /* set margins of the main content so that it doesn't overlap the sidebar */
-  /* #page-content {
-    margin-left: 22rem;
-    margin-right: 2rem;
-    transition: margin-left 0.3s ease-in-out;
-  } */
+  
 }

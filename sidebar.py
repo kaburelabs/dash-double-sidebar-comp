@@ -1,11 +1,9 @@
-from operator import le
 import dash
 import dash_bootstrap_components as dbc
 from dash import Input, Output, State, dcc, html
 
 from sidebar_left import left_sidebar
 from sidebar_right import right_sidebar
-
 
 app = dash.Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP],
@@ -64,19 +62,13 @@ def toggle_classname(n, classname):
      Input("left-sidebar", "className")],
 )
 def setting_class_content(right_sidebar, left_sidebar):
-    # print(right_sidebar, left_sidebar)
-    
     if right_sidebar != "collapsed-right" and left_sidebar != "collapsed-left":
-        # print("both open")
         return "pageContentBo"
     elif right_sidebar == "collapsed-right" and left_sidebar != "collapsed-left":
-        # print("only left open")
         return "pageContentOlc"
     elif right_sidebar != "collapsed-right" and left_sidebar == "collapsed-left":
-        # print("only right open")
         return "pageContentOro"
     elif right_sidebar == "collapsed-right" and left_sidebar == "collapsed-left":
-        # print("both closed")
         return "pageContentBc"
     return ""
 

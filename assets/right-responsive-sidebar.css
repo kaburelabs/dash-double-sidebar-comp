@@ -1,6 +1,6 @@
 #right-sidebar {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   background-color: #f8f9fa;
 }
 
@@ -38,7 +38,7 @@
     right: 0;
     bottom: 0;
     width: 20rem;
-    text-align: right;
+    text-align: left;
     transition: margin 0.3s ease-in-out, padding 0.3s ease-in-out;
   }
 
@@ -94,22 +94,26 @@
   .pageContentOlc {
       margin-right: 6rem;
       margin-left: 22rem;
+      transition: margin-left 0.3s ease-in-out;
+      background: red;
 
   }
   .pageContentOro {
     margin-left: 6rem;
     margin-right: 22rem;
+    transition: margin-right 0.3s ease-in-out;
+    background: red;
   }
   .pageContentBo {
     margin-left: 22rem;
     margin-right: 22rem;
-    /* transition: margin-left 0.3s ease-in-out; */
+    transition: margin-right 0.3s ease-in-out;
     background: red;
   }
   .pageContentBc {
     margin-left: 6rem;
     margin-right: 6rem;
-    /* transition: margin-left 0.3s ease-in-out; */
+    transition: margin-left 0.3s ease-in-out;
     background: red;
   }
 
